@@ -1,1 +1,1 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/8ut9xfh9o68sukrl?svg=true)](https://ci.appveyor.com/project/Pezu-git/generators)
+[![Build status](https://ci.appveyor.com/api/projects/status/0oi3892ccahhdxo7?svg=true)](https://ci.appveyor.com/project/Pezu-git/ahj-dom)
