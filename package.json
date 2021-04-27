@@ -1,5 +1,5 @@
 {
-  "name": "unit-test",
+  "name": "ahj-dom",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pezu-git/unit-test.git"
+    "url": "git+https://github.com/Pezu-git/ahj-dom.git"
   },
   "author": "pezu-git",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Pezu-git/unit-test/issues"
+    "url": "https://github.com/Pezu-git/ahj-dom/issues"
   },
-  "homepage": "https://github.com/Pezu-git/unit-test#readme",
+  "homepage": "https://github.com/Pezu-git/ahj-dom#readme",
   "devDependencies": {
     "@babel/cli": "^7.12.16",
     "@babel/core": "^7.12.16",
