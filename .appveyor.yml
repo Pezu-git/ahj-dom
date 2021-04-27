@@ -20,7 +20,7 @@ test_script:
   - npm run lint && npm test # скрипт сборки
 deploy_script: # скрипт развёртывания
 - git config --global credential.helper store
-- git config --global Pezu-git AppVeyor
+- git config --global Nikolaev Artem AppVeyor
 - git config --global artem_nikolaev69@mail.ru ci@appveyor.com
 - echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" > "$HOME/.git-credentials"
 - npx push-dir --dir=dist --branch=gh-pages --force --verbose
