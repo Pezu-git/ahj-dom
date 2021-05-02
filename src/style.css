@@ -1,0 +1,48 @@
+body {
+  justify-content: center;
+  display: flex;
+}
+.board {
+  box-sizing: border-box;
+  width: 70%;
+  min-width: 768px;
+  max-width: 1300px;
+  height: 600px;
+  max-width: 1300px;
+  padding: 15px 10px;
+  border: 1px solid #d5d4d4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.map {
+  justify-content: center;
+  box-sizing: border-box;
+  width: calc(25% - 20px);
+  height: calc(25% - 20px);
+  padding: 30px 20px;
+  border: 5px solid #d5d4d4;
+  margin-bottom: 20px;
+  background-color: violet;
+  position: relative; 
+}
+.img {
+  display: block;
+  width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+  justify-content: center;
+}
+.goblin {
+  display: none
+}
+.active {
+  display: block
+}
