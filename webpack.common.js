@@ -11,10 +11,12 @@ __webpack_base_uri__ = 'http://localhost:8080';
 
 module.exports = {
   entry: './src/index.js',
+  target: 'web',
   output: {
     chunkLoading: false,
     wasmLoading: false,
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '',
     filename: 'index.js',
   },
   module: {
