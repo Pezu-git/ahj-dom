@@ -21,9 +21,9 @@ for (let i = 0; i < 16; i++) {
   imgDiv.classList.add('goblin');
   newImgDiv.appendChild(imgDiv);
 }
-export default function appear(mapp) {
+export default function appear(maxMap) {
   const min = Math.ceil(0);
-  const max = Math.floor(mapp);
+  const max = Math.floor(maxMap);
   const number = Math.floor(Math.random() * (max - min));
   const goblin = document.querySelectorAll('.goblin');
   const active = document.querySelector('.active');
@@ -41,5 +41,4 @@ export default function appear(mapp) {
     active.classList.remove('active');
   }
 }
-// appear();
 setInterval(() => appear(16), 600);

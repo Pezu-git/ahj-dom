@@ -5,7 +5,6 @@
 /* eslint-disable no-undef */
 // eslint-disable-next-line import/named
 import appear from '../js/app.js';
-// import max from '../js/app.js';
 
 test('waits 1 second before ending the game', () => {
   const board = document.createElement('div');
@@ -25,9 +24,7 @@ test('waits 1 second before ending the game', () => {
     newImgDiv.appendChild(imgDiv);
   }
   appear(1);
-  // expect(appear).toBe(template());
   const goblin = document.querySelectorAll('.goblin');
   const received = goblin[0].classList.contains('active');
-  // const received = console.log(goblin[0]);
   expect(received).toBeTruthy();
 });
