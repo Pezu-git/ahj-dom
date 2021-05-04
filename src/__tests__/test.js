@@ -3,18 +3,16 @@
 /* eslint-disable global-require */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
+// eslint-disable-next-line import/named
 import appear from '../js/app.js';
-// import '../js/app.js';
+// import max from '../js/app.js';
 
 test('waits 1 second before ending the game', () => {
   const board = document.createElement('div');
   board.classList.add('board');
   document.body.appendChild(board);
-  const min = Math.ceil(0);
-  const max = Math.floor(1);
-  const numArr = [];
 
-  for (let i = 0; i < max; i++) {
+  for (let i = 0; i < 16; i++) {
     const newMap = document.createElement('div');
     newMap.classList.add('map');
     board.appendChild(newMap);
@@ -26,11 +24,9 @@ test('waits 1 second before ending the game', () => {
     imgDiv.classList.add('goblin');
     newImgDiv.appendChild(imgDiv);
   }
-  appear();
+  appear(1);
   // expect(appear).toBe(template());
   const goblin = document.querySelectorAll('.goblin');
-  const number = 1;
-  const active = document.querySelector('.active');
   const received = goblin[0].classList.contains('active');
   // const received = console.log(goblin[0]);
   expect(received).toBeTruthy();
