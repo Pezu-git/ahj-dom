@@ -5,8 +5,12 @@
 const board = document.createElement('div');
 board.classList.add('board');
 document.body.appendChild(board);
+const min = Math.ceil(0);
+const max = Math.floor(16);
+const numArr = [];
+// const number = Math.floor(Math.random() * (max - min));
 
-for (let i = 0; i < 16; i++) {
+for (let i = 0; i < max; i++) {
   const newMap = document.createElement('div');
   newMap.classList.add('map');
   board.appendChild(newMap);
@@ -19,13 +23,9 @@ for (let i = 0; i < 16; i++) {
   newImgDiv.appendChild(imgDiv);
 }
 export default function appear() {
-  const numArr = [];
-  const min = Math.ceil(0);
-  const max = Math.floor(16);
   const number = Math.floor(Math.random() * (max - min));
   const goblin = document.querySelectorAll('.goblin');
   const active = document.querySelector('.active');
-
   while (numArr[0] === number && number > min) {
     goblin[number - 1].classList.add('active');
     numArr[0] = number - 1;
@@ -36,9 +36,9 @@ export default function appear() {
   }
   goblin[number].classList.add('active');
   numArr[0] = number;
-
   if (active) {
     active.classList.remove('active');
   }
 }
-setInterval(() => appear(), 1000);
+// appear();
+setInterval(() => appear(), 600);
